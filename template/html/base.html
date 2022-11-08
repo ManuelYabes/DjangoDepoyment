@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'APP:index' %}">index</a></li>
+            <li><a href="{% url 'APP:signup' %}">signup</a></li>
+            <li><a href="{% url 'APP:register' %}">register</a></li>
+
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'APP:logout' %}">logout</a></li>
+            {% else %}
+            <li><a href="{% url 'APP:login' %}">login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <main>
+        {% block body_bloc %}
+        {% endblock %}
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+nav{
+    background-color: blanchedalmond;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: auto;
+    height: 8vh;
+    display: flex;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    margin-top: 8vh;
+}

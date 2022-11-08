@@ -1,0 +1,12 @@
+{% extends 'html/base.html' %}
+
+    {% block body_bloc %}
+        <h1>index</h1>
+        <ul>
+            {% for i in pengguna %}
+                <li>
+                    {{ i.name }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
