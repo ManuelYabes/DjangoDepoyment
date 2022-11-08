@@ -5,7 +5,6 @@ bcrypt==4.0.1
 certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
 cffi==1.15.1
 Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
-distribute==0.6.24
 gunicorn==20.1.0
 Pillow==9.3.0
 pip==22.2.2
